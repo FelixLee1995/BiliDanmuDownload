@@ -1,0 +1,2 @@
+
+xmlfilepath = 'd:\\danmaku\\av'
