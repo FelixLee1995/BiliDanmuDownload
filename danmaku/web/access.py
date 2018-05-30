@@ -142,7 +142,7 @@ def downloadXml(avid, cid, title, page):
     title = filterFilepath(title)
     if not os.path.exists(dirpath):
         os.makedirs(dirpath)
-    with open(dirpath + os.sep + 'P' + str(page) + '_' + str(title) + '.xml', 'w', encoding='utf-8') as file:
+    with open(dirpath + os.sep + 'P' + str(page) + '_' + str(title) + '.xml', 'w') as file:
         file.write(xml)
     upsertModifyTime(avid)
 
